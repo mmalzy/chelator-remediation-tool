@@ -370,12 +370,8 @@ st.markdown("""
 # Model loading helpers
 # ---------------------------------------------------------------------------
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
-# Look for models/ next to this script first (Streamlit Cloud / shared folder),
-# then fall back to the original project layout (models/ one level up)
-MODEL_DIR = os.path.join(SCRIPT_DIR, "models")
-if not os.path.isdir(MODEL_DIR):
-    PROJECT_DIR = os.path.dirname(SCRIPT_DIR)
-    MODEL_DIR = os.path.join(PROJECT_DIR, "models")
+PROJECT_DIR = os.path.dirname(SCRIPT_DIR)
+MODEL_DIR = os.path.join(PROJECT_DIR, "models")
 
 METALS = ["Pb", "Cu", "Zn", "Cd"]
 TARGET_COLS = [f"{m.lower()}_percent_free" for m in METALS]
@@ -606,14 +602,13 @@ with st.sidebar:
 chelator_options = ["EDTA", "NTA", "Citrate", "Humic", "Fulvic"]
 dose_values = [50, 150, 300]
 
-@st.cache_data(show_spinner=False)
-def run_full_comparison(_ph, _pb, _cu, _zn, _cd, _doc, _ca, _mg, _na, _cl,
-                        _texture, _hfo, _moisture, _pe, _ca_mg, _ionic, _metal):
+def run_full_comparison(ph, pb, cu, zn, cd, doc, ca, mg, na, cl,
+                        texture, hfo, moisture, pe, ca_mg, ionic, metal):
     rows = []
     # No-treatment baseline
-    feats = build_features(_ph, _pb, _cu, _zn, _cd, _doc, _ca, _mg, _na, _cl,
-                           "nan", 0, _texture, _hfo, _moisture, _pe,
-                           _ca_mg, _ionic, _metal)
+    feats = build_features(ph, pb, cu, zn, cd, doc, ca, mg, na, cl,
+                           "nan", 0, texture, hfo, moisture, pe,
+                           ca_mg, ionic, metal)
     preds = predict_all(feats)
     rows.append({"Chelator": "No Treatment", "Dose (mg/L)": 0,
                  **{f"{m} % Free": round(preds[m], 1) for m in METALS}})
@@ -621,9 +616,9 @@ def run_full_comparison(_ph, _pb, _cu, _zn, _cd, _doc, _ca, _mg, _na, _cl,
     # All chelator x dose combos
     for chel in chelator_options:
         for dose in dose_values:
-            feats = build_features(_ph, _pb, _cu, _zn, _cd, _doc, _ca, _mg,
-                                   _na, _cl, chel, dose, _texture, _hfo,
-                                   _moisture, _pe, _ca_mg, _ionic, _metal)
+            feats = build_features(ph, pb, cu, zn, cd, doc, ca, mg,
+                                   na, cl, chel, dose, texture, hfo,
+                                   moisture, pe, ca_mg, ionic, metal)
             preds = predict_all(feats)
             rows.append({"Chelator": CHELATOR_DISPLAY.get(chel, chel),
                          "Dose (mg/L)": dose,
