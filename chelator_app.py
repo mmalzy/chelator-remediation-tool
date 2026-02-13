@@ -370,8 +370,12 @@ st.markdown("""
 # Model loading helpers
 # ---------------------------------------------------------------------------
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
-PROJECT_DIR = os.path.dirname(SCRIPT_DIR)
-MODEL_DIR = os.path.join(PROJECT_DIR, "models")
+# Check for models/ in multiple locations:
+# 1. Same directory as script (Streamlit Cloud / shared folder)
+# 2. One level up (local project: python_scripts -> models)
+MODEL_DIR = os.path.join(SCRIPT_DIR, "models")
+if not os.path.isdir(MODEL_DIR):
+    MODEL_DIR = os.path.join(os.path.dirname(SCRIPT_DIR), "models")
 
 METALS = ["Pb", "Cu", "Zn", "Cd"]
 TARGET_COLS = [f"{m.lower()}_percent_free" for m in METALS]
