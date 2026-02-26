@@ -1,0 +1,26 @@
+TITLE Scenario 2818: pH=6.0, High, Fulvic=50mg/L, Sand, Wet, Ionic=Low
+SOLUTION 1  RI contaminated soil pore water
+    temp      25
+    pH        6.0
+    pe        3
+    units     mol/L
+    # Heavy metals
+    Pb        1.4479e-03  # 300 mg/L
+    Cu        3.9339e-03  # 250 mg/L
+    Zn        6.1181e-03  # 400 mg/L
+    Cd        2.2240e-04  # 25 mg/L
+    # Competing cations
+    Ca        2.4950e-03  # 100 mg/L
+    Mg        2.0568e-03  # 50 mg/L
+    # Ionic strength (salinity)
+    Na        4.3497e-03  # 100 mg/L
+    Cl        4.2313e-03  # 150 mg/L
+    # Dissolved organic carbon
+    C(4)      9.8263e-05  # 10 mg/L base DOC
+    # Fulvic acid: 50 mg/L (as additional DOC)
+    
+SURFACE 1  Soil mineral surfaces (Fe/Al oxides)
+    Hfo_wOH   0.1  600  0.09
+    -equil 1
+    
+END

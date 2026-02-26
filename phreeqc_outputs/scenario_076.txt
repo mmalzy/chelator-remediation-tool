@@ -1,0 +1,395 @@
+   Input file: ../phreeqc_inputs/scenario_076.phr
+  Output file: ../phreeqc_outputs/scenario_076.txt
+Database file: /usr/local/share/phreeqc_databases/minteq.v4.dat
+
+------------------
+Reading data base.
+------------------
+
+	SOLUTION_MASTER_SPECIES
+	SOLUTION_SPECIES
+	SOLUTION_SPECIES
+	PHASES
+	PHASES
+	SURFACE_MASTER_SPECIES
+	SURFACE_SPECIES
+	END
+------------------------------------
+Reading input data for simulation 1.
+------------------------------------
+
+	TITLE Scenario 76: pH=6.5, Pb=150mg/L, None=0mg/L, Clay, Wet
+	SOLUTION 1
+	    temp      25
+	    pH        6.5
+	    pe        3
+	    units     mol/L
+	    Pb        7.2394e-04
+	    Ca        1.25e-3
+	    Mg        8.23e-4
+	    Na        4.35e-3
+	    Cl        4.23e-3
+	    C(4)      1.0e-3
+	SURFACE 1
+	    Hfo_wOH   1.5  600  0.09
+	    equilibrate 1
+	END
+-----
+TITLE
+-----
+
+ Scenario 76: pH=6.5, Pb=150mg/L, None=0mg/L, Clay, Wet
+
+-------------------------------------------
+Beginning of initial solution calculations.
+-------------------------------------------
+
+Initial solution 1.	
+
+-----------------------------Solution composition------------------------------
+
+	Elements           Molality       Moles
+
+	C(4)              1.001e-03   1.001e-03
+	Ca                1.251e-03   1.251e-03
+	Cl                4.232e-03   4.232e-03
+	Mg                8.234e-04   8.234e-04
+	Na                4.352e-03   4.352e-03
+	Pb                7.243e-04   7.243e-04
+
+----------------------------Description of solution----------------------------
+
+                                       pH  =   6.500    
+                                       pe  =   3.000    
+                        Activity of water  =   1.000
+                 Ionic strength (mol/kgw)  =   9.683e-03
+                       Mass of water (kg)  =   1.000e+00
+                 Total alkalinity (eq/kg)  =   7.737e-04
+                       Total CO2 (mol/kg)  =   1.001e-03
+                         Temperature (°C)  =  25.00
+                  Electrical balance (eq)  =   4.943e-03
+ Percent error, 100*(Cat-|An|)/(Cat+|An|)  =  34.58
+                               Iterations  =  10
+                                  Total H  = 1.110150e+02
+                                  Total O  = 5.550986e+01
+
+----------------------------Distribution of species----------------------------
+
+                                               Log       Log       Log    mole V
+   Species          Molality    Activity  Molality  Activity     Gamma   cm³/mol
+
+   H+              3.501e-07   3.162e-07    -6.456    -6.500    -0.044      0.00
+   OH-             3.532e-08   3.184e-08    -7.452    -7.497    -0.045     (0)  
+   H2O             5.551e+01   9.998e-01     1.744    -0.000     0.000     18.07
+C(4)          1.001e-03
+   HCO3-           4.928e-04   4.466e-04    -3.307    -3.350    -0.043     (0)  
+   H2CO3           3.177e-04   3.177e-04    -3.498    -3.498     0.000     (0)  
+   PbHCO3+         1.163e-04   1.036e-04    -3.934    -3.985    -0.050     (0)  
+   PbCO3           6.215e-05   6.215e-05    -4.207    -4.207     0.000     (0)  
+   CaHCO3+         7.579e-06   6.880e-06    -5.120    -5.162    -0.042     (0)  
+   MgHCO3+         2.765e-06   2.496e-06    -5.558    -5.603    -0.044     (0)  
+   NaHCO3          9.871e-07   9.871e-07    -6.006    -6.006     0.000     (0)  
+   CO3-2           9.950e-08   6.622e-08    -7.002    -7.179    -0.177     (0)  
+   CaCO3           8.681e-08   8.681e-08    -7.061    -7.061     0.000     (0)  
+   MgCO3           3.008e-08   3.008e-08    -7.522    -7.522     0.000     (0)  
+   Pb(CO3)2-2      1.884e-08   1.187e-08    -7.725    -7.926    -0.201     (0)  
+   NaCO3-          5.347e-09   4.846e-09    -8.272    -8.315    -0.043     (0)  
+Ca            1.251e-03
+   Ca+2            1.243e-03   8.272e-04    -2.906    -3.082    -0.177     (0)  
+   CaHCO3+         7.579e-06   6.880e-06    -5.120    -5.162    -0.042     (0)  
+   CaCO3           8.681e-08   8.681e-08    -7.061    -7.061     0.000     (0)  
+   CaOH+           5.789e-10   5.255e-10    -9.237    -9.279    -0.042     (0)  
+Cl            4.232e-03
+   Cl-             4.184e-03   3.779e-03    -2.378    -2.423    -0.044     (0)  
+   PbCl+           4.699e-05   4.186e-05    -4.328    -4.378    -0.050     (0)  
+   PbCl2           7.066e-07   7.066e-07    -6.151    -6.151     0.000     (0)  
+   PbCl3-          1.193e-09   1.063e-09    -8.923    -8.973    -0.050     (0)  
+   PbCl4-2         2.915e-12   1.836e-12   -11.535   -11.736    -0.201     (0)  
+H(0)          1.413e-22
+   H2              7.064e-23   7.079e-23   -22.151   -22.150     0.001     (0)  
+Mg            8.234e-04
+   Mg+2            8.206e-04   5.461e-04    -3.086    -3.263    -0.177     (0)  
+   MgHCO3+         2.765e-06   2.496e-06    -5.558    -5.603    -0.044     (0)  
+   MgCO3           3.008e-08   3.008e-08    -7.522    -7.522     0.000     (0)  
+   MgOH+           7.615e-09   6.922e-09    -8.118    -8.160    -0.041     (0)  
+Na            4.352e-03
+   Na+             4.351e-03   3.930e-03    -2.361    -2.406    -0.044     (0)  
+   NaHCO3          9.871e-07   9.871e-07    -6.006    -6.006     0.000     (0)  
+   NaCO3-          5.347e-09   4.846e-09    -8.272    -8.315    -0.043     (0)  
+O(0)          0.000e+00
+   O2              0.000e+00   0.000e+00   -47.996   -47.995     0.001     (0)  
+Pb            7.243e-04
+   Pb+2            4.691e-04   3.122e-04    -3.329    -3.506    -0.177     (0)  
+   PbHCO3+         1.163e-04   1.036e-04    -3.934    -3.985    -0.050     (0)  
+   PbCO3           6.215e-05   6.215e-05    -4.207    -4.207     0.000     (0)  
+   PbCl+           4.699e-05   4.186e-05    -4.328    -4.378    -0.050     (0)  
+   PbOH+           2.803e-05   2.497e-05    -4.552    -4.603    -0.050     (0)  
+   PbCl2           7.066e-07   7.066e-07    -6.151    -6.151     0.000     (0)  
+   Pb2OH+3         3.496e-07   1.235e-07    -6.456    -6.908    -0.452     (0)  
+   Pb4(OH)4+4      6.201e-08   9.761e-09    -7.208    -8.011    -0.803     (0)  
+   Pb(OH)2         2.514e-08   2.514e-08    -7.600    -7.600     0.000     (0)  
+   Pb(CO3)2-2      1.884e-08   1.187e-08    -7.725    -7.926    -0.201     (0)  
+   Pb3(OH)4+2      6.248e-09   3.936e-09    -8.204    -8.405    -0.201     (0)  
+   PbCl3-          1.193e-09   1.063e-09    -8.923    -8.973    -0.050     (0)  
+   PbCl4-2         2.915e-12   1.836e-12   -11.535   -11.736    -0.201     (0)  
+   Pb(OH)3-        8.982e-13   8.002e-13   -12.047   -12.097    -0.050     (0)  
+   Pb(OH)4-2       9.905e-18   6.239e-18   -17.004   -17.205    -0.201     (0)  
+
+------------------------------Saturation indices-------------------------------
+
+  Phase               SI** log IAP   log K(298 K,   1 atm)
+
+  Aragonite        -1.96    -10.26   -8.30  CaCO3
+  Artinite        -10.30     -0.70    9.60  MgCO3:Mg(OH)2:3H2O
+  Brucite          -7.11      9.74   16.84  Mg(OH)2
+  Calcite          -1.78    -10.26   -8.48  CaCO3
+  Cerussite         2.45    -10.68  -13.13  PbCO3
+  CH4(g)          -55.13    -96.18  -41.05  CH4
+  CO2(g)           -2.03    -20.18  -18.15  CO2
+  Cotunnite        -3.57     -8.35   -4.78  PbCl2
+  Dolomite(disordered)  -4.16    -20.70  -16.54  CaMg(CO3)2
+  Dolomite(ordered)  -3.61    -20.70  -17.09  CaMg(CO3)2
+  Halite           -6.43     -4.83    1.60  NaCl
+  Huntite         -11.62    -41.59  -29.97  CaMg3(CO3)4
+  Hydrocerussite    6.90    -11.87  -18.77  Pb3(OH)2(CO3)2
+  Hydromagnesite  -23.26    -32.03   -8.77  Mg5(CO3)4(OH)2:4H2O
+  Laurionite       -0.05      0.57    0.62  PbOHCl
+  Lime            -22.78      9.92   32.70  CaO
+  Litharge         -3.20      9.49   12.69  PbO
+  Magnesite        -2.98    -10.44   -7.46  MgCO3
+  Massicot         -3.40      9.49   12.89  PbO
+  Mg(OH)2(active)  -9.06      9.74   18.79  Mg(OH)2
+  Minium          -26.04     47.48   73.52  Pb3O4
+  Natron          -10.68    -11.99   -1.31  Na2CO3:10H2O
+  Nesquehonite     -5.77    -10.44   -4.67  MgCO3:3H2O
+  O2(g)           -45.09     38.00   83.09  O2
+  Pb(OH)2           1.34      9.49    8.15  Pb(OH)2
+  Pb10(OH)6O(CO3)6 -17.37    -26.13   -8.76  Pb10(OH)6O(CO3)6
+  Pb2(OH)3Cl        1.27     10.07    8.79  Pb2(OH)3Cl
+  Pb2O(OH)2        -7.20     18.99   26.19  Pb2O(OH)2
+  Pb2O3           -23.05     37.99   61.04  Pb2O3
+  Pb2OCO3          -0.63     -1.19   -0.56  Pb2OCO3
+  Pb3O2CO3         -2.72      8.30   11.02  Pb3O2CO3
+  Pbmetal         -13.75     -9.51    4.25  Pb
+  PbO:0.3H2O       -3.49      9.49   12.98  PbO:0.33H2O
+  Periclase       -11.85      9.74   21.58  MgO
+  Phosgenite        0.77    -19.04  -19.81  PbCl2:PbCO3
+  Plattnerite     -21.11     28.49   49.60  PbO2
+  Portlandite     -12.89      9.92   22.80  Ca(OH)2
+  Thermonatrite   -12.63    -11.99    0.64  Na2CO3:H2O
+
+**For a gas, SI = log10(fugacity). Fugacity = pressure * phi / 1 atm.
+  For ideal gases, phi = 1.
+
+------------------------------------------------------
+Beginning of initial surface-composition calculations.
+------------------------------------------------------
+
+Surface 1.	
+
+Diffuse Double Layer Surface-Complexation Model
+
+Hfo           
+	  8.711e-05  Surface charge, eq
+	  1.557e-01  sigma, C/m²
+	  1.694e-01  psi, V
+	 -6.592e+00  -F*psi/RT
+	  1.371e-03  exp(-F*psi/RT)
+	  6.000e+02  specific area, m²/g
+	  5.400e+01  m² for   9.000e-02 g
+
+
+Hfo_w         
+	  1.500e+00  moles
+	                                   Mole                     Log
+	Species               Moles    Fraction    Molality    Molality
+
+	Hfo_wO-           6.331e-01       0.422   6.331e-01      -0.199
+	Hfo_wOPb+         6.312e-01       0.421   6.312e-01      -0.200
+	Hfo_wOH           2.337e-01       0.156   2.337e-01      -0.631
+	Hfo_wOH2+         1.976e-03       0.001   1.976e-03      -2.704
+	Hfo_wOMg+         1.390e-05       0.000   1.390e-05      -4.857
+	Hfo_wOCa+         1.184e-06       0.000   1.184e-06      -5.927
+
+-----------------------------------------
+Beginning of batch-reaction calculations.
+-----------------------------------------
+
+Reaction step 1.
+
+Using solution 1.	
+Using surface 1.	
+
+------------------------------Surface composition------------------------------
+
+Diffuse Double Layer Surface-Complexation Model
+
+Hfo           
+	  8.711e-05  Surface charge, eq
+	  1.557e-01  sigma, C/m²
+	  1.694e-01  psi, V
+	 -6.592e+00  -F*psi/RT
+	  1.371e-03  exp(-F*psi/RT)
+	  6.000e+02  specific area, m²/g
+	  5.400e+01  m² for   9.000e-02 g
+
+
+Hfo_w         
+	  1.500e+00  moles
+	                                   Mole                     Log
+	Species               Moles    Fraction    Molality    Molality
+
+	Hfo_wO-           6.331e-01       0.422   6.331e-01      -0.199
+	Hfo_wOPb+         6.312e-01       0.421   6.312e-01      -0.200
+	Hfo_wOH           2.337e-01       0.156   2.337e-01      -0.631
+	Hfo_wOH2+         1.976e-03       0.001   1.976e-03      -2.704
+	Hfo_wOMg+         1.390e-05       0.000   1.390e-05      -4.857
+	Hfo_wOCa+         1.184e-06       0.000   1.184e-06      -5.927
+
+-----------------------------Solution composition------------------------------
+
+	Elements           Molality       Moles
+
+	C                 1.001e-03   1.001e-03
+	Ca                1.251e-03   1.251e-03
+	Cl                4.232e-03   4.232e-03
+	Mg                8.234e-04   8.234e-04
+	Na                4.352e-03   4.352e-03
+	Pb                7.243e-04   7.243e-04
+
+----------------------------Description of solution----------------------------
+
+                                       pH  =   6.500      Charge balance
+                                       pe  =   3.000      Adjusted to redox equilibrium
+                        Activity of water  =   1.000
+                 Ionic strength (mol/kgw)  =   9.683e-03
+                       Mass of water (kg)  =   1.000e+00
+                 Total alkalinity (eq/kg)  =   7.737e-04
+                       Total CO2 (mol/kg)  =   1.001e-03
+                         Temperature (°C)  =  25.00
+                  Electrical balance (eq)  =   4.943e-03
+ Percent error, 100*(Cat-|An|)/(Cat+|An|)  =  34.58
+                               Iterations  =   0
+                                  Total H  = 1.110150e+02
+                                  Total O  = 5.550986e+01
+
+----------------------------Distribution of species----------------------------
+
+                                               Log       Log       Log    mole V
+   Species          Molality    Activity  Molality  Activity     Gamma   cm³/mol
+
+   H+              3.501e-07   3.162e-07    -6.456    -6.500    -0.044      0.00
+   OH-             3.532e-08   3.184e-08    -7.452    -7.497    -0.045     (0)  
+   H2O             5.551e+01   9.998e-01     1.744    -0.000     0.000     18.07
+C(4)          1.001e-03
+   HCO3-           4.928e-04   4.466e-04    -3.307    -3.350    -0.043     (0)  
+   H2CO3           3.177e-04   3.177e-04    -3.498    -3.498     0.000     (0)  
+   PbHCO3+         1.163e-04   1.036e-04    -3.934    -3.985    -0.050     (0)  
+   PbCO3           6.215e-05   6.215e-05    -4.207    -4.207     0.000     (0)  
+   CaHCO3+         7.579e-06   6.880e-06    -5.120    -5.162    -0.042     (0)  
+   MgHCO3+         2.765e-06   2.496e-06    -5.558    -5.603    -0.044     (0)  
+   NaHCO3          9.871e-07   9.871e-07    -6.006    -6.006     0.000     (0)  
+   CO3-2           9.950e-08   6.622e-08    -7.002    -7.179    -0.177     (0)  
+   CaCO3           8.681e-08   8.681e-08    -7.061    -7.061     0.000     (0)  
+   MgCO3           3.008e-08   3.008e-08    -7.522    -7.522     0.000     (0)  
+   Pb(CO3)2-2      1.884e-08   1.187e-08    -7.725    -7.926    -0.201     (0)  
+   NaCO3-          5.347e-09   4.846e-09    -8.272    -8.315    -0.043     (0)  
+Ca            1.251e-03
+   Ca+2            1.243e-03   8.272e-04    -2.906    -3.082    -0.177     (0)  
+   CaHCO3+         7.579e-06   6.880e-06    -5.120    -5.162    -0.042     (0)  
+   CaCO3           8.681e-08   8.681e-08    -7.061    -7.061     0.000     (0)  
+   CaOH+           5.789e-10   5.255e-10    -9.237    -9.279    -0.042     (0)  
+Cl            4.232e-03
+   Cl-             4.184e-03   3.779e-03    -2.378    -2.423    -0.044     (0)  
+   PbCl+           4.699e-05   4.186e-05    -4.328    -4.378    -0.050     (0)  
+   PbCl2           7.066e-07   7.066e-07    -6.151    -6.151     0.000     (0)  
+   PbCl3-          1.193e-09   1.063e-09    -8.923    -8.973    -0.050     (0)  
+   PbCl4-2         2.915e-12   1.836e-12   -11.535   -11.736    -0.201     (0)  
+H(0)          1.413e-22
+   H2              7.064e-23   7.079e-23   -22.151   -22.150     0.001     (0)  
+Mg            8.234e-04
+   Mg+2            8.206e-04   5.461e-04    -3.086    -3.263    -0.177     (0)  
+   MgHCO3+         2.765e-06   2.496e-06    -5.558    -5.603    -0.044     (0)  
+   MgCO3           3.008e-08   3.008e-08    -7.522    -7.522     0.000     (0)  
+   MgOH+           7.615e-09   6.922e-09    -8.118    -8.160    -0.041     (0)  
+Na            4.352e-03
+   Na+             4.351e-03   3.930e-03    -2.361    -2.406    -0.044     (0)  
+   NaHCO3          9.871e-07   9.871e-07    -6.006    -6.006     0.000     (0)  
+   NaCO3-          5.347e-09   4.846e-09    -8.272    -8.315    -0.043     (0)  
+O(0)          0.000e+00
+   O2              0.000e+00   0.000e+00   -47.996   -47.995     0.001     (0)  
+Pb            7.243e-04
+   Pb+2            4.691e-04   3.122e-04    -3.329    -3.506    -0.177     (0)  
+   PbHCO3+         1.163e-04   1.036e-04    -3.934    -3.985    -0.050     (0)  
+   PbCO3           6.215e-05   6.215e-05    -4.207    -4.207     0.000     (0)  
+   PbCl+           4.699e-05   4.186e-05    -4.328    -4.378    -0.050     (0)  
+   PbOH+           2.803e-05   2.497e-05    -4.552    -4.603    -0.050     (0)  
+   PbCl2           7.066e-07   7.066e-07    -6.151    -6.151     0.000     (0)  
+   Pb2OH+3         3.496e-07   1.235e-07    -6.456    -6.908    -0.452     (0)  
+   Pb4(OH)4+4      6.201e-08   9.761e-09    -7.208    -8.011    -0.803     (0)  
+   Pb(OH)2         2.514e-08   2.514e-08    -7.600    -7.600     0.000     (0)  
+   Pb(CO3)2-2      1.884e-08   1.187e-08    -7.725    -7.926    -0.201     (0)  
+   Pb3(OH)4+2      6.248e-09   3.936e-09    -8.204    -8.405    -0.201     (0)  
+   PbCl3-          1.193e-09   1.063e-09    -8.923    -8.973    -0.050     (0)  
+   PbCl4-2         2.915e-12   1.836e-12   -11.535   -11.736    -0.201     (0)  
+   Pb(OH)3-        8.982e-13   8.002e-13   -12.047   -12.097    -0.050     (0)  
+   Pb(OH)4-2       9.905e-18   6.239e-18   -17.004   -17.205    -0.201     (0)  
+
+------------------------------Saturation indices-------------------------------
+
+  Phase               SI** log IAP   log K(298 K,   1 atm)
+
+  Aragonite        -1.96    -10.26   -8.30  CaCO3
+  Artinite        -10.30     -0.70    9.60  MgCO3:Mg(OH)2:3H2O
+  Brucite          -7.11      9.74   16.84  Mg(OH)2
+  Calcite          -1.78    -10.26   -8.48  CaCO3
+  Cerussite         2.45    -10.68  -13.13  PbCO3
+  CH4(g)          -55.13    -96.18  -41.05  CH4
+  CO2(g)           -2.03    -20.18  -18.15  CO2
+  Cotunnite        -3.57     -8.35   -4.78  PbCl2
+  Dolomite(disordered)  -4.16    -20.70  -16.54  CaMg(CO3)2
+  Dolomite(ordered)  -3.61    -20.70  -17.09  CaMg(CO3)2
+  Halite           -6.43     -4.83    1.60  NaCl
+  Huntite         -11.62    -41.59  -29.97  CaMg3(CO3)4
+  Hydrocerussite    6.90    -11.87  -18.77  Pb3(OH)2(CO3)2
+  Hydromagnesite  -23.26    -32.03   -8.77  Mg5(CO3)4(OH)2:4H2O
+  Laurionite       -0.05      0.57    0.62  PbOHCl
+  Lime            -22.78      9.92   32.70  CaO
+  Litharge         -3.20      9.49   12.69  PbO
+  Magnesite        -2.98    -10.44   -7.46  MgCO3
+  Massicot         -3.40      9.49   12.89  PbO
+  Mg(OH)2(active)  -9.06      9.74   18.79  Mg(OH)2
+  Minium          -26.04     47.48   73.52  Pb3O4
+  Natron          -10.68    -11.99   -1.31  Na2CO3:10H2O
+  Nesquehonite     -5.77    -10.44   -4.67  MgCO3:3H2O
+  O2(g)           -45.09     38.00   83.09  O2
+  Pb(OH)2           1.34      9.49    8.15  Pb(OH)2
+  Pb10(OH)6O(CO3)6 -17.37    -26.13   -8.76  Pb10(OH)6O(CO3)6
+  Pb2(OH)3Cl        1.27     10.07    8.79  Pb2(OH)3Cl
+  Pb2O(OH)2        -7.20     18.99   26.19  Pb2O(OH)2
+  Pb2O3           -23.05     37.99   61.04  Pb2O3
+  Pb2OCO3          -0.63     -1.19   -0.56  Pb2OCO3
+  Pb3O2CO3         -2.72      8.30   11.02  Pb3O2CO3
+  Pbmetal         -13.75     -9.51    4.25  Pb
+  PbO:0.3H2O       -3.49      9.49   12.98  PbO:0.33H2O
+  Periclase       -11.85      9.74   21.58  MgO
+  Phosgenite        0.77    -19.04  -19.81  PbCl2:PbCO3
+  Plattnerite     -21.11     28.49   49.60  PbO2
+  Portlandite     -12.89      9.92   22.80  Ca(OH)2
+  Thermonatrite   -12.63    -11.99    0.64  Na2CO3:H2O
+
+**For a gas, SI = log10(fugacity). Fugacity = pressure * phi / 1 atm.
+  For ideal gases, phi = 1.
+
+------------------
+End of simulation.
+------------------
+
+------------------------------------
+Reading input data for simulation 2.
+------------------------------------
+
+----------------------------------
+End of Run after 0.028507 Seconds.
+----------------------------------
+

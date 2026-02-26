@@ -1,0 +1,9 @@
+TITLE Simple pH calculation
+SOLUTION 1
+    temp      25
+    pH        7.0
+    pe        4.0
+    units     mg/L
+    Ca        10
+    Cl        20
+END

@@ -1,0 +1,108 @@
+   Input file: test1.phr
+  Output file: ../phreeqc_outputs/test1_output.txt
+Database file: /usr/local/share/phreeqc_databases/phreeqc.dat
+
+------------------
+Reading data base.
+------------------
+
+	SOLUTION_MASTER_SPECIES
+	SOLUTION_SPECIES
+	PHASES
+	EXCHANGE_MASTER_SPECIES
+	EXCHANGE_SPECIES
+	SURFACE_MASTER_SPECIES
+	SURFACE_SPECIES
+	RATES
+	END
+------------------------------------
+Reading input data for simulation 1.
+------------------------------------
+
+	TITLE Simple pH calculation
+	SOLUTION 1
+	    temp      25
+	    pH        7.0
+	    pe        4.0
+	    units     mg/L
+	    Ca        10
+	    Cl        20
+	END
+-----
+TITLE
+-----
+
+ Simple pH calculation
+
+-------------------------------------------
+Beginning of initial solution calculations.
+-------------------------------------------
+
+Initial solution 1.	
+
+-----------------------------Solution composition------------------------------
+
+	Elements           Molality       Moles
+
+	Ca                2.495e-04   2.495e-04
+	Cl                5.641e-04   5.641e-04
+
+----------------------------Description of solution----------------------------
+
+                                       pH  =   7.000    
+                                       pe  =   4.000    
+      Specific Conductance (µS/cm,  25°C)  = 69
+                          Density (g/cm³)  =   0.99707
+                               Volume (L)  =   1.00297
+                        Activity of water  =   1.000
+                 Ionic strength (mol/kgw)  =   7.812e-04
+                       Mass of water (kg)  =   1.000e+00
+                 Total alkalinity (eq/kg)  =   1.784e-09
+                         Temperature (°C)  =  25.00
+                  Electrical balance (eq)  =  -6.513e-05
+ Percent error, 100*(Cat-|An|)/(Cat+|An|)  =  -6.12
+                               Iterations  =   3
+                                  Total H  = 1.110124e+02
+                                  Total O  = 5.550622e+01
+
+----------------------------Distribution of species----------------------------
+
+                                               Log       Log       Log    mole V
+   Species          Molality    Activity  Molality  Activity     Gamma   cm³/mol
+
+   OH-             1.045e-07   1.012e-07    -6.981    -6.995    -0.014     -4.11
+   H+              1.031e-07   1.000e-07    -6.987    -7.000    -0.013      0.00
+   H2O             5.551e+01   1.000e+00     1.744    -0.000     0.000     18.07
+Ca            2.495e-04
+   Ca+2            2.495e-04   2.201e-04    -3.603    -3.657    -0.054    -18.15
+   CaOH+           3.771e-10   3.653e-10    -9.424    -9.437    -0.014     (0)  
+Cl            5.641e-04
+   Cl-             5.641e-04   5.465e-04    -3.249    -3.262    -0.014     18.07
+H(0)          1.416e-25
+   H2              7.078e-26   7.079e-26   -25.150   -25.150     0.000     28.61
+O(0)          0.000e+00
+   O2              0.000e+00   0.000e+00   -42.080   -42.080     0.000     30.40
+
+------------------------------Saturation indices-------------------------------
+
+  Phase               SI** log IAP   log K(298 K,   1 atm)
+
+  H2(g)           -22.05    -25.15   -3.10  H2
+  H2O(g)           -1.50     -0.00    1.50  H2O
+  O2(g)           -39.19    -42.08   -2.89  O2
+
+**For a gas, SI = log10(fugacity). Fugacity = pressure * phi / 1 atm.
+  For ideal gases, phi = 1.
+
+------------------
+End of simulation.
+------------------
+
+------------------------------------
+Reading input data for simulation 2.
+------------------------------------
+
+----------------------------------
+End of Run after 0.033879 Seconds.
+----------------------------------
+

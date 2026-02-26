@@ -1,0 +1,22 @@
+TITLE Dry Scenario 466: pH=5.5, Medium, EDTA=50mg/L, Clay, Dry, Ionic=Medium
+SOLUTION 1  RI contaminated soil pore water - DRY CONDITIONS
+    temp      25
+    pH        5.5
+    pe        12
+    units     mol/L
+    Pb        4.8263e-04
+    Cu        1.2589e-03
+    Zn        1.8354e-03
+    Cd        7.1168e-05
+    Ca        4.9900e-04
+    Mg        4.1135e-04
+    Na        2.1749e-02
+    Cl        1.9746e-02
+    C(4)      1.9305e-04
+    Edta      1.7109e-04  # 50 mg/L EDTA
+    
+SURFACE 1
+    Hfo_wOH   1.5  600  0.09
+    -equil 1
+    
+END

@@ -1,0 +1,31 @@
+TITLE Lead with EDTA chelation test
+SOLUTION 1
+    temp      25
+    pH        6.5
+    pe        8
+    units     mg/L
+    Pb        100      # 100 mg/L lead (contaminated soil)
+    Ca        50       # background calcium
+    Mg        20       # background magnesium
+    Na        100      # background sodium
+    Cl        150      # to balance charge
+SOLUTION_SPECIES
+# Define EDTA species (PHREEQC has these built-in)
+EDTA-4 + H+ = HEDTA-3
+    log_k   10.17
+EDTA-4 + 2H+ = H2EDTA-2
+    log_k   16.42
+# Lead-EDTA complex
+Pb+2 + EDTA-4 = PbEDTA-2
+    log_k   17.88
+SOLUTION_MASTER_SPECIES
+Edta    Edta-4    0    270.24    270.24
+SOLUTION_SPECIES
+Edta-4 = Edta-4
+    log_k   0.0
+SOLUTION 1
+    Edta    10 mg/L  # Adding 10 mg/L EDTA as chelator
+SAVE solution 1
+END
+USE solution 1
+END

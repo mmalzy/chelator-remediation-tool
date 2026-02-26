@@ -1,0 +1,42 @@
+{
+  "feature_columns": [
+    "ph",
+    "pb_mg_L",
+    "cu_mg_L",
+    "zn_mg_L",
+    "cd_mg_L",
+    "doc_mg_L",
+    "ca_mg_L",
+    "mg_mg_L",
+    "na_mg_L",
+    "cl_mg_L",
+    "dose_mg_L",
+    "hfo_sites",
+    "pe",
+    "chelator_encoded"
+  ],
+  "numeric_features": [
+    "ph",
+    "pb_mg_L",
+    "cu_mg_L",
+    "zn_mg_L",
+    "cd_mg_L",
+    "doc_mg_L",
+    "ca_mg_L",
+    "mg_mg_L",
+    "na_mg_L",
+    "cl_mg_L",
+    "dose_mg_L",
+    "hfo_sites",
+    "pe"
+  ],
+  "categorical_features": [
+    "chelator"
+  ],
+  "targets": [
+    "pb_percent_free",
+    "cu_percent_free",
+    "zn_percent_free",
+    "cd_percent_free"
+  ]
+}

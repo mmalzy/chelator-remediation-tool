@@ -1,0 +1,128 @@
+{
+  "training_date": "2026-02-12T21:22:47.158189",
+  "data_file": "/Users/mallorymalz/Documents/chelator_ml_project/data/complete_training_data_with_baseline.csv",
+  "n_rows": 12636,
+  "n_features": 14,
+  "feature_columns": [
+    "ph",
+    "pb_mg_L",
+    "cu_mg_L",
+    "zn_mg_L",
+    "cd_mg_L",
+    "doc_mg_L",
+    "ca_mg_L",
+    "mg_mg_L",
+    "na_mg_L",
+    "cl_mg_L",
+    "dose_mg_L",
+    "hfo_sites",
+    "pe",
+    "chelator_encoded"
+  ],
+  "results": {
+    "pb_percent_free": {
+      "winner": "GradientBoosting",
+      "metrics": {
+        "RandomForest": {
+          "r2": 0.9631485288522784,
+          "rmse": 5.1081227692491415,
+          "mae": 3.482886873683357,
+          "train_time": 0.12116217613220215,
+          "cv_r2_mean": 0.9125941390182597,
+          "cv_r2_std": 0.05134471222364923
+        },
+        "GradientBoosting": {
+          "r2": 0.999021730006332,
+          "rmse": 0.8322681556817808,
+          "mae": 0.5661588123131185,
+          "train_time": 1.0833048820495605,
+          "cv_r2_mean": 0.9787862560554462,
+          "cv_r2_std": 0.03133915158322089
+        }
+      },
+      "top_3_features": [
+        "ph",
+        "chelator_encoded",
+        "dose_mg_L"
+      ]
+    },
+    "cu_percent_free": {
+      "winner": "GradientBoosting",
+      "metrics": {
+        "RandomForest": {
+          "r2": 0.9625529909133168,
+          "rmse": 6.444071773106639,
+          "mae": 4.6562182312549165,
+          "train_time": 0.11926722526550293,
+          "cv_r2_mean": 0.8448182874379807,
+          "cv_r2_std": 0.10625497353818351
+        },
+        "GradientBoosting": {
+          "r2": 0.9996828103388234,
+          "rmse": 0.5930773144643283,
+          "mae": 0.41971595635091796,
+          "train_time": 1.0922520160675049,
+          "cv_r2_mean": 0.9481205412737028,
+          "cv_r2_std": 0.07649850624367814
+        }
+      },
+      "top_3_features": [
+        "ph",
+        "pe",
+        "chelator_encoded"
+      ]
+    },
+    "zn_percent_free": {
+      "winner": "GradientBoosting",
+      "metrics": {
+        "RandomForest": {
+          "r2": 0.9525187059141158,
+          "rmse": 5.701584805070295,
+          "mae": 3.1622674208931403,
+          "train_time": 0.10925412178039551,
+          "cv_r2_mean": 0.9512937122604039,
+          "cv_r2_std": 0.011679959770187343
+        },
+        "GradientBoosting": {
+          "r2": 0.9998378267082729,
+          "rmse": 0.33321456840740526,
+          "mae": 0.18909065500051378,
+          "train_time": 1.0733599662780762,
+          "cv_r2_mean": 0.9972196406933881,
+          "cv_r2_std": 0.0046946895846776224
+        }
+      },
+      "top_3_features": [
+        "chelator_encoded",
+        "dose_mg_L",
+        "cd_mg_L"
+      ]
+    },
+    "cd_percent_free": {
+      "winner": "GradientBoosting",
+      "metrics": {
+        "RandomForest": {
+          "r2": 0.9721221626338779,
+          "rmse": 4.40422903809613,
+          "mae": 1.665302618173144,
+          "train_time": 0.10776019096374512,
+          "cv_r2_mean": 0.9791186502597953,
+          "cv_r2_std": 0.006158587702279276
+        },
+        "GradientBoosting": {
+          "r2": 0.9999694349752805,
+          "rmse": 0.1458319663070272,
+          "mae": 0.08105792886478679,
+          "train_time": 1.0642127990722656,
+          "cv_r2_mean": 0.9998812060031419,
+          "cv_r2_std": 0.00010894021029215226
+        }
+      },
+      "top_3_features": [
+        "cl_mg_L",
+        "na_mg_L",
+        "chelator_encoded"
+      ]
+    }
+  }
+}

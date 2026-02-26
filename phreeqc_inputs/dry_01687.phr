@@ -1,0 +1,22 @@
+TITLE Dry Scenario 1687: pH=6.5, Low, Citrate=50mg/L, Sand, Dry, Ionic=Medium
+SOLUTION 1  RI contaminated soil pore water - DRY CONDITIONS
+    temp      25
+    pH        6.5
+    pe        12
+    units     mol/L
+    Pb        1.2066e-04
+    Cu        3.1471e-04
+    Zn        4.5886e-04
+    Cd        1.7792e-05
+    Ca        2.4950e-03
+    Mg        2.0568e-03
+    Na        2.1749e-02
+    Cl        1.9746e-02
+    C(4)      4.8263e-05
+    Citrate   2.6441e-04  # 50 mg/L Citrate
+    
+SURFACE 1
+    Hfo_wOH   0.1  600  0.09
+    -equil 1
+    
+END

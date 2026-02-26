@@ -1,0 +1,21 @@
+TITLE Scenario 323: pH=5.5, Metals=High, None=0mg/L, Sand, Mesic
+SOLUTION 1  Multi-metal contaminated soil
+    temp      25
+    pH        5.5
+    pe        8
+    units     mol/L
+    Pb        1.4479e-03  # 300 mg/L
+    Cu        3.9339e-03  # 250 mg/L
+    Zn        6.1181e-03  # 400 mg/L
+    Ca        1.25e-3
+    Mg        8.23e-4
+    Na        4.35e-3
+    Cl        4.23e-3
+    C(4)      1.0e-3
+
+    
+SURFACE 1  Soil surface sites
+    Hfo_wOH   0.1  600  0.09
+    -equil 1
+    
+END

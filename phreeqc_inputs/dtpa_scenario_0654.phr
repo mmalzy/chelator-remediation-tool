@@ -1,0 +1,22 @@
+TITLE Scenario 654: pH=6.5, Metals=Medium, EDTA=200mg/L, Loam, Dry
+
+SOLUTION 1  Multi-metal contaminated soil
+    temp      25
+    pH        6.5
+    pe        12
+    units     mol/L
+    Pb        4.8263e-04
+    Cu        1.2589e-03
+    Zn        1.8354e-03
+    Ca        1.25e-3
+    Mg        8.23e-4
+    Na        4.35e-3
+    Cl        4.23e-3
+    C(4)      1.0e-3
+    Edta      6.8437e-04
+    
+SURFACE 1
+    Hfo_wOH   0.5  600  0.09
+    -equil 1
+    
+END

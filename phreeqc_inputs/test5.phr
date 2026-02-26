@@ -1,0 +1,37 @@
+TITLE Lead contaminated soil - EDTA chelation test
+# ============================================
+# INPUT PARAMETERS FOR ML MODEL
+# ============================================
+# pH: 6.5
+# Metal: Pb at 100 mg/L (4.83e-4 mol/L)
+# Chelator: EDTA at 20 mg/L (5.0e-5 mol/L)
+# Moisture: Mesic (pe=8)
+# Texture: Loam (Hfo_wOH=0.5)
+# Ca: 50 mg/L (1.25e-3 mol/L)
+# Mg: 20 mg/L (8.23e-4 mol/L)
+# DOC: Represented by C(4) = 1.0e-3 mol/L
+# ============================================
+
+SOLUTION 1  Soil pore water with EDTA
+    temp      25
+    pH        6.5
+    pe        8           # Moisture proxy: 8 = mesic (moderate)
+    units     mol/L
+    Pb        4.83e-4     # 100 mg/L lead (contamination)
+    Ca        1.25e-3     # 50 mg/L calcium (competition)
+    Mg        8.23e-4     # 20 mg/L magnesium (competition)
+    Na        4.35e-3     # 100 mg/L sodium (ionic strength)
+    Cl        4.23e-3     # Chloride for charge balance
+    C(4)      1.0e-3      # DOC proxy: dissolved inorganic carbon
+    Edta      5.0e-5      # 20 mg/L EDTA chelator
+    
+# Surface complexation for soil texture proxy
+SURFACE 1
+    Hfo_wOH   0.5  600  0.09   # 0.5 = loam texture
+    # Texture options:
+    # Sand:  Hfo_wOH 0.1  (low sorption)
+    # Loam:  Hfo_wOH 0.5  (medium sorption)
+    # Clay:  Hfo_wOH 1.5  (high sorption)
+    -equil 1
+    
+END

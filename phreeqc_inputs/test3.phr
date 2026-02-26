@@ -1,0 +1,27 @@
+TITLE Lead contaminated soil with varying parameters
+SOLUTION 1  Soil pore water
+    temp      25
+    pH        6.5
+    pe        8           # Moisture proxy: 8 = mesic (moderate)
+    units     mol/L
+    Pb        4.83e-4     # ~100 mg/L lead
+    Ca        1.25e-3     # 50 mg/L calcium (affects competition)
+    Mg        8.23e-4     # 20 mg/L magnesium
+    Na        4.35e-3     # 100 mg/L sodium (ionic strength)
+    Cl        4.23e-3     # chloride for charge balance
+    C(4)      1.0e-3      # DOC proxy: dissolved inorganic carbon
+    
+# Surface complexation for soil texture proxy
+SURFACE 1
+    Hfo_wOH   0.5  600  0.09   # Iron oxide sites (texture proxy)
+    # 0.5 = medium texture (loam)
+    # For sand: 0.1, For clay: 1.5
+    -equil 1
+    
+SELECTED_OUTPUT
+    -reset false
+    -solution
+    -molalities  Pb+2  PbOH+  PbCl+  PbCO3
+    -saturation_indices  Cerussite  # PbCO3 mineral
+    
+END

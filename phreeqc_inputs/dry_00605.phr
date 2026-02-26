@@ -1,0 +1,22 @@
+TITLE Dry Scenario 605: pH=5.5, High, NTA=150mg/L, Sand, Dry, Ionic=Medium
+SOLUTION 1  RI contaminated soil pore water - DRY CONDITIONS
+    temp      25
+    pH        5.5
+    pe        12
+    units     mol/L
+    Pb        1.4479e-03
+    Cu        3.9339e-03
+    Zn        6.1181e-03
+    Cd        2.2240e-04
+    Ca        2.4950e-03
+    Mg        2.0568e-03
+    Na        2.1749e-02
+    Cl        1.9746e-02
+    C(4)      4.8263e-05
+    Nta       7.8477e-04  # 150 mg/L NTA
+    
+SURFACE 1
+    Hfo_wOH   0.1  600  0.09
+    -equil 1
+    
+END

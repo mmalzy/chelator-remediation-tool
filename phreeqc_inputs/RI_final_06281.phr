@@ -1,0 +1,26 @@
+TITLE Scenario 6281: pH=7.0, High, Humic=150mg/L, Loam, Mesic, Ionic=High
+SOLUTION 1  RI contaminated soil pore water
+    temp      25
+    pH        7.0
+    pe        8
+    units     mol/L
+    # Heavy metals
+    Pb        1.4479e-03  # 300 mg/L
+    Cu        3.9339e-03  # 250 mg/L
+    Zn        6.1181e-03  # 400 mg/L
+    Cd        2.2240e-04  # 25 mg/L
+    # Competing cations
+    Ca        2.4950e-03  # 100 mg/L
+    Mg        2.0568e-03  # 50 mg/L
+    # Ionic strength (salinity)
+    Na        8.6994e-02  # 2000 mg/L
+    Cl        8.4626e-02  # 3000 mg/L
+    # Dissolved organic carbon
+    C(4)      2.7066e-04  # 25 mg/L base DOC
+    # Humic acid: 150 mg/L (as additional DOC)
+    
+SURFACE 1  Soil mineral surfaces (Fe/Al oxides)
+    Hfo_wOH   0.5  600  0.09
+    -equil 1
+    
+END

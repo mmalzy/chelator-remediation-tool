@@ -1,0 +1,22 @@
+TITLE Dry Scenario 3739: pH=7.5, Medium, NTA=50mg/L, Clay, Dry, Ionic=Low
+SOLUTION 1  RI contaminated soil pore water - DRY CONDITIONS
+    temp      25
+    pH        7.5
+    pe        12
+    units     mol/L
+    Pb        4.8263e-04
+    Cu        1.2589e-03
+    Zn        1.8354e-03
+    Cd        7.1168e-05
+    Ca        2.4950e-03
+    Mg        2.0568e-03
+    Na        4.3497e-03
+    Cl        4.2313e-03
+    C(4)      1.9305e-04
+    Nta       2.6159e-04  # 50 mg/L NTA
+    
+SURFACE 1
+    Hfo_wOH   1.5  600  0.09
+    -equil 1
+    
+END

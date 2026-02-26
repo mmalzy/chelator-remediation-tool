@@ -1,0 +1,25 @@
+study_id,citation,metal,chelator,dose_mapped,ph_mapped,texture_mapped,ionic_mapped,observed_extraction_pct,observed_best_chelator,predicted_free_pct,baseline_free_pct,predicted_reduction_pct,direction_match
+NAGHIPOUR_1,Naghipour et al. (2016) J Environ Manage,pb,EDTA,300,7.0,Sand,Low,85.3,EDTA,53.9,,,N/A
+NAGHIPOUR_2,Naghipour et al. (2016) J Environ Manage,cd,EDTA,300,7.0,Sand,Low,83.2,EDTA,82.0,,,N/A
+NAGHIPOUR_3,Naghipour et al. (2016) J Environ Manage,zn,EDTA,300,7.0,Sand,Low,69.7,EDTA,98.6,,,N/A
+NAGHIPOUR_4,Naghipour et al. (2016) J Environ Manage,pb,NTA,300,7.0,Sand,Low,21.8,EDTA,57.1,,,N/A
+NAGHIPOUR_5,Naghipour et al. (2016) J Environ Manage,cd,NTA,300,7.0,Sand,Low,83.6,NTA,82.1,,,N/A
+NAGHIPOUR_6,Naghipour et al. (2016) J Environ Manage,zn,NTA,300,7.0,Sand,Low,24.5,EDTA,98.1,,,N/A
+TANDY_1,Tandy et al. (2004) Environ Sci Technol,cu,EDTA,50,7.0,Loam,High,18.0,EDDS,23.3,,,N/A
+TANDY_2,Tandy et al. (2004) Environ Sci Technol,cu,NTA,50,7.0,Loam,High,25.0,EDDS,23.0,,,N/A
+TANDY_3,Tandy et al. (2004) Environ Sci Technol,zn,NTA,50,7.0,Loam,High,22.0,NTA,91.5,,,N/A
+TANDY_4,Tandy et al. (2004) Environ Sci Technol,zn,EDTA,50,7.0,Loam,High,15.0,NTA,91.6,,,N/A
+TANDY_5,Tandy et al. (2004) Environ Sci Technol,pb,EDTA,50,7.0,Loam,High,45.0,EDTA,32.7,,,N/A
+TANDY_6,Tandy et al. (2004) Environ Sci Technol,pb,NTA,50,7.0,Loam,High,30.0,EDTA,32.9,,,N/A
+HASEGAWA_1,Hasegawa et al. (2019) Appl Geochem,pb,EDTA,300,5.5,Loam,Low,85.0,EDTA,86.8,83.9,-2.9,NO - model says no benefit
+HASEGAWA_2,Hasegawa et al. (2019) Appl Geochem,pb,EDTA,300,7.0,Loam,Low,65.0,EDTA,53.5,,,N/A
+HASEGAWA_3,Hasegawa et al. (2019) Appl Geochem,cu,EDTA,300,5.5,Loam,Low,70.0,DTPA,74.8,96.3,21.5,YES
+HASEGAWA_4,Hasegawa et al. (2019) Appl Geochem,zn,EDTA,300,5.5,Loam,Low,55.0,DTPA,99.5,99.1,-0.3,NO - model says no benefit
+LABANOWSKI_1,Labanowski et al. (2008) Environ Pollut,pb,EDTA,300,7.0,Sand,High,,EDTA,31.4,,,N/A
+LABANOWSKI_2,Labanowski et al. (2008) Environ Pollut,pb,Citrate,300,7.0,Sand,High,,EDTA,28.9,,,N/A
+LABANOWSKI_3,Labanowski et al. (2008) Environ Pollut,zn,Citrate,300,7.0,Sand,High,,Citrate,87.7,,,N/A
+MEERS_1,Meers et al. (2005) Int J Phytoremediation,pb,EDTA,300,7.5,Loam,High,35.0,EDTA,14.5,14.0,-0.5,NO - model says no benefit
+MEERS_2,Meers et al. (2005) Int J Phytoremediation,pb,Citrate,300,7.5,Loam,High,15.0,EDTA,14.1,14.0,-0.1,NO - model says no benefit
+MEERS_3,Meers et al. (2005) Int J Phytoremediation,cd,EDTA,300,7.5,Loam,High,25.0,EDTA,20.0,20.0,-0.0,NO - model says no benefit
+ALABOUDI_1,Alaboudi et al. (2019) Pol J Environ Stud,pb,EDTA,300,6.0,Loam,High,75.0,EDTA,39.0,,,N/A
+ALABOUDI_2,Alaboudi et al. (2019) Pol J Environ Stud,pb,EDTA,300,6.0,Loam,High,50.0,EDTA,39.0,,,N/A

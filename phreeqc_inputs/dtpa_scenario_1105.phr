@@ -1,0 +1,69 @@
+TITLE Scenario 1105: pH=7.5, Metals=High, DTPA=50mg/L, Loam, Mesic
+
+# DTPA (Diethylenetriaminepentaacetic acid) definitions
+SOLUTION_MASTER_SPECIES
+Dtpa    Dtpa-5    0    393.35    393.35
+
+SOLUTION_SPECIES
+# Base species
+Dtpa-5 = Dtpa-5
+    log_k   0.0
+
+# Protonation
+H+ + Dtpa-5 = HDtpa-4
+    log_k   10.5
+2H+ + Dtpa-5 = H2Dtpa-3
+    log_k   18.8
+3H+ + Dtpa-5 = H3Dtpa-2
+    log_k   24.2
+4H+ + Dtpa-5 = H4Dtpa-
+    log_k   28.2
+5H+ + Dtpa-5 = H5Dtpa
+    log_k   30.5
+
+# Lead complexes
+Pb+2 + Dtpa-5 = PbDtpa-3
+    log_k   18.8
+Pb+2 + Dtpa-5 + H+ = PbHDtpa-2
+    log_k   21.0
+
+# Copper complexes
+Cu+2 + Dtpa-5 = CuDtpa-3
+    log_k   21.4
+Cu+2 + Dtpa-5 + H+ = CuHDtpa-2
+    log_k   24.0
+
+# Zinc complexes (STRONG!)
+Zn+2 + Dtpa-5 = ZnDtpa-3
+    log_k   18.6
+Zn+2 + Dtpa-5 + H+ = ZnHDtpa-2
+    log_k   21.2
+
+# Calcium competition
+Ca+2 + Dtpa-5 = CaDtpa-3
+    log_k   10.7
+
+# Magnesium competition
+Mg+2 + Dtpa-5 = MgDtpa-3
+    log_k   9.3
+
+SOLUTION 1  Multi-metal contaminated soil
+    temp      25
+    pH        7.5
+    pe        8
+    units     mol/L
+    Pb        1.4479e-03
+    Cu        3.9339e-03
+    Zn        6.1181e-03
+    Ca        1.25e-3
+    Mg        8.23e-4
+    Na        4.35e-3
+    Cl        4.23e-3
+    C(4)      1.0e-3
+    Dtpa      1.2711e-04  # 50 mg/L DTPA
+    
+SURFACE 1
+    Hfo_wOH   0.5  600  0.09
+    -equil 1
+    
+END

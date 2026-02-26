@@ -1,0 +1,9 @@
+Chemical Logic Rule,Status,Pass Rate (%),Tests (n),Violations (n),Explanation of Violations
+Higher pH decreases % free metal,PASS,100.0,40176,0,—
+Chelator (EDTA/NTA/Citrate) reduces % free vs baseline,FAIL,80.9,17496,3349,Low-dose chelator at pH 5.5 causes competitive desorption from surface sites
+Higher dose decreases % free metal,PASS,100.0,19440,0,—
+More surface sites decreases % free metal,PASS,100.0,33696,0,—
+EDTA outperforms NTA for Pb and Cu,FAIL,78.7,4860,1034,NTA less affected by protonation at pH 5.5; differential binding kinetics
+Zn harder to chelate than Cu (higher % free),FAIL,99.0,12636,126,Cu-organic matter affinity (Irving-Williams series) reverses order with Humic/Fulvic at pH 5.5
+Chelator produces lower free% at higher pH,PASS,100.0,23328,0,—
+High ionic strength reduces free Pb/Cu,FAIL,98.3,8424,141,Effect reverses for no-chelator baseline at pH 7.5 where metals already precipitated

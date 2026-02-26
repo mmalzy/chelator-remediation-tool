@@ -1,0 +1,26 @@
+TITLE Scenario 5769: pH=7.0, Medium, Citrate=300mg/L, Clay, Mesic, Ionic=Low
+SOLUTION 1  RI contaminated soil pore water
+    temp      25
+    pH        7.0
+    pe        8
+    units     mol/L
+    # Heavy metals
+    Pb        4.8263e-04  # 100 mg/L
+    Cu        1.2589e-03  # 80 mg/L
+    Zn        1.8354e-03  # 120 mg/L
+    Cd        7.1168e-05  # 8 mg/L
+    # Competing cations
+    Ca        4.9900e-04  # 20 mg/L
+    Mg        4.1135e-04  # 10 mg/L
+    # Ionic strength (salinity)
+    Na        4.3497e-03  # 100 mg/L
+    Cl        4.2313e-03  # 150 mg/L
+    # Dissolved organic carbon
+    C(4)      1.9305e-04  # 40 mg/L base DOC
+    Citrate   1.5865e-03  # 300 mg/L Citrate
+    
+SURFACE 1  Soil mineral surfaces (Fe/Al oxides)
+    Hfo_wOH   1.5  600  0.09
+    -equil 1
+    
+END

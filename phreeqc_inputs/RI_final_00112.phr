@@ -1,0 +1,26 @@
+TITLE Scenario 112: pH=5.5, Low, Citrate=50mg/L, Sand, Wet, Ionic=Low
+SOLUTION 1  RI contaminated soil pore water
+    temp      25
+    pH        5.5
+    pe        3
+    units     mol/L
+    # Heavy metals
+    Pb        1.2066e-04  # 25 mg/L
+    Cu        3.1471e-04  # 20 mg/L
+    Zn        4.5886e-04  # 30 mg/L
+    Cd        1.7792e-05  # 2 mg/L
+    # Competing cations
+    Ca        2.4950e-03  # 100 mg/L
+    Mg        2.0568e-03  # 50 mg/L
+    # Ionic strength (salinity)
+    Na        4.3497e-03  # 100 mg/L
+    Cl        4.2313e-03  # 150 mg/L
+    # Dissolved organic carbon
+    C(4)      4.8263e-05  # 10 mg/L base DOC
+    Citrate   2.6441e-04  # 50 mg/L Citrate
+    
+SURFACE 1  Soil mineral surfaces (Fe/Al oxides)
+    Hfo_wOH   0.1  600  0.09
+    -equil 1
+    
+END

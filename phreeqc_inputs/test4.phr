@@ -1,0 +1,26 @@
+TITLE Lead with citrate chelation
+SOLUTION 1  Soil pore water with citrate
+    temp      25
+    pH        6.5
+    pe        8           # Moisture proxy: 8 = mesic
+    units     mol/L
+    Pb        4.83e-4     # ~100 mg/L lead
+    Ca        1.25e-3     # 50 mg/L calcium
+    Mg        8.23e-4     # 20 mg/L magnesium
+    Na        4.35e-3     # 100 mg/L sodium
+    Cl        4.23e-3     # chloride
+    C(4)      1.0e-3      # DOC proxy
+    Citrate   1.0e-4      # 10 mg/L citrate as chelator
+    
+# Surface complexation for soil texture
+SURFACE 1
+    Hfo_wOH   0.5  600  0.09   # Loam texture
+    -equil 1
+    
+SELECTED_OUTPUT
+    -reset false
+    -solution
+    -molalities  Pb+2 PbCitrate- PbHCitrate PbCl+ PbCO3
+    -saturation_indices  Cerussite
+    
+END

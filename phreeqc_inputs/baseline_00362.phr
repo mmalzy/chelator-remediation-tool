@@ -1,0 +1,27 @@
+TITLE Baseline No Chelator | pH=7.5 Metal=Low Texture=Clay Moisture=Dry Ionic=Low CaMg=High
+SOLUTION 1
+    temp      25
+    pH        7.5
+    pe        12
+    units     mol/L
+    Pb        1.206564e-04
+    Cu        3.147326e-04
+    Zn        4.588559e-04
+    Cd        1.779185e-05
+    Ca        2.495134e-03
+    Mg        2.057190e-03
+    Na        4.349717e-03
+    Cl        4.230954e-03
+    C(4)      3.330281e-03
+
+SURFACE 1
+    Hfo_wOH   1.5  600  0.09
+    -equil 1
+
+SELECTED_OUTPUT
+    -reset       false
+    -totals      Pb Cu Zn Cd
+    -molalities  Pb+2 Cu+2 Zn+2 Cd+2
+                 Hfo_wOPb+ Hfo_wOCu+ Hfo_wOZn+ Hfo_wOCd+
+
+END

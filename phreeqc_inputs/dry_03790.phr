@@ -1,0 +1,22 @@
+TITLE Dry Scenario 3790: pH=7.5, High, Humic=50mg/L, Sand, Dry, Ionic=Low
+SOLUTION 1  RI contaminated soil pore water - DRY CONDITIONS
+    temp      25
+    pH        7.5
+    pe        12
+    units     mol/L
+    Pb        1.4479e-03
+    Cu        3.9339e-03
+    Zn        6.1181e-03
+    Cd        2.2240e-04
+    Ca        4.9900e-04
+    Mg        4.1135e-04
+    Na        4.3497e-03
+    Cl        4.2313e-03
+    C(4)      9.8263e-05
+    # Humic acid: 50 mg/L (as additional DOC)
+    
+SURFACE 1
+    Hfo_wOH   0.1  600  0.09
+    -equil 1
+    
+END

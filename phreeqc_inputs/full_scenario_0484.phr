@@ -1,0 +1,21 @@
+TITLE Scenario 484: pH=6.0, Metals=Medium, None=0mg/L, Clay, Dry
+SOLUTION 1  Multi-metal contaminated soil
+    temp      25
+    pH        6.0
+    pe        12
+    units     mol/L
+    Pb        4.8263e-04  # 100 mg/L
+    Cu        1.2589e-03  # 80 mg/L
+    Zn        1.8354e-03  # 120 mg/L
+    Ca        1.25e-3
+    Mg        8.23e-4
+    Na        4.35e-3
+    Cl        4.23e-3
+    C(4)      1.0e-3
+
+    
+SURFACE 1  Soil surface sites
+    Hfo_wOH   1.5  600  0.09
+    -equil 1
+    
+END

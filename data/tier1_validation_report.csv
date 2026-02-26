@@ -1,0 +1,33 @@
+rule,status,total_tests,violations,pass_rate,details
+Higher pH decreases % free metal,FAIL,43740,8465,80.65,"Example violations:
+  Lead (Pb): pH 5.5->5.5, free% 71.6->72.2 (+0.6%)
+  Lead (Pb): pH 6.0->6.0, free% 70.2->70.9 (+0.7%)
+  Lead (Pb): pH 6.5->6.5, free% 66.7->67.3 (+0.6%)"
+Chelator reduces % free vs baseline,FAIL,58320,20113,65.51,"Example violations:
+  Lead (Pb): Humic 50mg/L at pH 5.5 increased free% from 85.4 to 89.4
+  Lead (Pb): Humic 150mg/L at pH 5.5 increased free% from 85.4 to 88.8
+  Lead (Pb): Humic 300mg/L at pH 5.5 increased free% from 85.4 to 88.0"
+Higher dose decreases % free metal,FAIL,40500,8520,78.96,"Example violations:
+  Lead (Pb): Citrate dose 50->50 mg/L, free% 71.6->72.2
+  Lead (Pb): Citrate dose 150->150 mg/L, free% 68.4->69.0
+  Lead (Pb): Citrate dose 300->300 mg/L, free% 63.3->63.9"
+More surface sites (clay>loam>sand) decreases % free metal,FAIL,40500,5352,86.79,"Example violations:
+  Lead (Pb): Sand->Sand, free% 54.6->56.8
+  Lead (Pb): Loam->Loam, free% 54.4->56.6
+  Lead (Pb): Clay->Clay, free% 54.3->56.4"
+EDTA outperforms NTA for Pb and Cu,FAIL,9720,2466,74.63,"Example violations:
+  Lead (Pb): EDTA=64.2% vs NTA=58.2% at pH 5.5, dose 300mg/L
+  Lead (Pb): EDTA=64.2% vs NTA=58.6% at pH 5.5, dose 300mg/L
+  Lead (Pb): EDTA=52.8% vs NTA=47.9% at pH 5.5, dose 300mg/L"
+Zn harder to chelate than Cu (higher % free),FAIL,12636,126,99.0,"Example violations:
+  Zn=92.1% < Cu=94.5% with Humic at pH 5.5
+  Zn=92.1% < Cu=94.5% with Humic at pH 5.5
+  Zn=92.1% < Cu=94.4% with Humic at pH 5.5"
+Chelator effectiveness greater at higher pH,FAIL,12,9,25.0,"Example violations (chelator more effective at low pH):
+  Lead (Pb) with EDTA: benefit at pH5.5=17.2% > pH7.5=-0.4%
+  Lead (Pb) with NTA: benefit at pH5.5=14.3% > pH7.5=-2.6%
+  Lead (Pb) with Citrate: benefit at pH5.5=23.0% > pH7.5=1.7%"
+High ionic strength reduces free Pb/Cu (chloride complexation),FAIL,16848,316,98.12,"Violations (high ionic increased free metal):
+  Lead (Pb): Low ionic=5.1%, High ionic=8.8% with Citrate at pH 5.5
+  Lead (Pb): Low ionic=5.1%, High ionic=8.8% with Citrate at pH 5.5
+  Lead (Pb): Low ionic=5.1%, High ionic=8.8% with Citrate at pH 5.5"
