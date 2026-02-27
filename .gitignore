@@ -28,3 +28,13 @@ venv/
 # Backup files
 *_BACKUP.csv
 *.bak
+
+# Project files to keep local only
+phreeqc_outputs/
+notes/
+Paper Components/
+deployable/
+*.docx
+~$*
+.Rhistory
+PROJECT_README.md
