@@ -1,9 +1,0 @@
-Comparison,Literature,Model,Agreement
-Best chelator for Pb,EDTA,Citrate > EDTA,Partial
-Best chelator for Cu,EDTA or NTA,NTA > Citrate > EDTA,Yes
-Best chelator for Zn,NTA,NTA > Citrate > EDTA,Yes
-Hardest metal to chelate,Zn,Zn (84.5% free),Yes
-Easiest metal to chelate,Cu or Pb,Cu (31.2% free),Yes
-pH effect direction,Lower pH increases extraction,Lower pH increases % free,Yes
-EDTA vs NTA for Pb,EDTA >> NTA,EDTA > NTA (37.4 vs 40.2%),Yes
-Dose-response direction,Higher dose increases extraction,Higher dose decreases % free,Yes

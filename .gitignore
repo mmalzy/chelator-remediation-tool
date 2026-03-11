@@ -38,3 +38,10 @@ deployable/
 ~$*
 .Rhistory
 PROJECT_README.md
+
+# Exclude from GitHub (kept locally)
+data/paper_tables/
+data/tier1_validation_report.csv
+data/tier2_benchmark_results*.csv
+data/literature_benchmark_data*.csv
+Figures/
