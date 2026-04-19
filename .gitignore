@@ -52,3 +52,4 @@ data/tier1_validation_report.csv
 data/tier2_benchmark_results*.csv
 data/literature_benchmark_data*.csv
 Figures/
+figures/
